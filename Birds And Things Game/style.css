@@ -1,0 +1,134 @@
+body {
+    background: radial-gradient(transparent 34%, #4f46e4 35%, #4f46e4 45%, transparent 46%), radial-gradient(circle at left, transparent 39%, #4f46e480 40%, #4f46e480 45%, transparent 46%), radial-gradient(circle at right, transparent 39%, #4f46e480 40%, #4f46e480 45%, transparent 46%);
+    background-size: 2em 2em;
+    background-color: #000000;
+    opacity: 1
+}
+
+.container {
+    max-width: 500px;
+    height: 605px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ff6347;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    font-family: "Jersey 15", serif;
+}
+
+h1 {
+    font-size: 100px;
+    color: #c20a0a;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+label {
+    font-size: 50px;
+    color: #4CAF50;
+    font-weight: bold;
+    font-family: "Jersey 15", serif;
+}
+
+select {
+    font-size: 30px;
+    padding: 5px 16px;
+    font-family: "Jersey 15", serif;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    /* Light background for better contrast */
+    color: #333;
+    /* Dark text for readability */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
+    cursor: pointer;
+    /* Indicate clickable element */
+}
+
+select:hover {
+    
+    /* Slightly darker green on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow on hover */
+    background-color: #a6b3a9;
+    /* Subtle background change on hover */
+}
+
+select:focus {
+    outline: none;
+    /* Remove default outline */
+    border-color: #2e7d32;
+    /* More defined focus border */
+    box-shadow: 0 0 10px rgba(46, 125, 50, 0.5);
+    /* Glowing effect on focus */
+}
+
+
+.game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.circle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px;
+}
+
+.circle div {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffa500, #ff4500);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.circle div:hover {
+    transform: scale(1.1);
+}
+
+.timer {
+    font-size: 28px;
+    color: #ff4500;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #4CAF50, #2E8B57);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #2E8B57, #4CAF50);
+    transform: scale(1.05);
+}
+
+#prompt {
+    font-size: 24px;
+    color: #4682B4;
+    margin-top: 15px;
+}

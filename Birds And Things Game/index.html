@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds and Things Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Birds and Things</h1>
+        <label for="players">Number of Players:</label>
+        <select id="players">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <button onclick="startGame()">Start Game</button>
+
+        <div class="game-area" id="game-area" style="display: none;">
+            <div class="circle" id="circle">
+                <!-- Fingers will be placed here -->
+            </div>
+            <div class="timer" id="timer">Countdown: 3</div>
+            <p id="prompt"></p>
+        </div>
+    </div>
+
+   
+</body>
+
+</html>
